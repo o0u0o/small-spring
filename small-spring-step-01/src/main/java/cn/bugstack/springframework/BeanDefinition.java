@@ -5,6 +5,7 @@ package cn.bugstack.springframework;
  */
 public class BeanDefinition {
 
+    //目前的 Bean 定义中，只有一个 Object 用于存放 Bean 对象
     private Object bean;
 
     public BeanDefinition(Object bean) {

@@ -15,6 +15,8 @@ public class ApiTest {
 
     @Test
     public void test_BeanFactory(){
+        //初始化 Bean 工厂 -> 注册 Bean -> 获取 Bean
+
         // 1.初始化 BeanFactory
         BeanFactory beanFactory = new BeanFactory();
 
@@ -25,6 +27,7 @@ public class ApiTest {
         // 3.获取bean
         UserService userService = (UserService) beanFactory.getBean("userService");
         userService.queryUserInfo();
+        userService.updateUserInfo();
     }
 
 }
